@@ -1,0 +1,24 @@
+# Core dependencies
+numpy==1.24.3  # Specific version for PyTorch 2.0.1+cu118 compatibility
+torch==2.0.1+cu118
+torchvision>=0.11.0
+matplotlib>=3.7.0  # For visualization
+networkx>=2.8.0    # Added for graph visualization
+
+# PyTorch Geometric 
+torch-geometric>=2.0.0
+
+# Computer vision
+opencv-python>=4.5.0
+
+# Utilities
+pathlib
+argparse
+
+# AirSim if needed (uncomment if using AirSim API directly)
+# airsim
+
+# Note: For torch-scatter, torch-sparse, torch-cluster, and torch-spline-conv,
+# install them separately using the following commands:
+# pip install torch-scatter torch-sparse torch-cluster torch-spline-conv -f https://data.pyg.org/whl/torch-${TORCH_VERSION}+${CUDA_VERSION}.html
+# Where ${TORCH_VERSION} is your PyTorch version (e.g., 2.0.1) and ${CUDA_VERSION} is your CUDA version (e.g., cu118).
